@@ -5,6 +5,7 @@
 !.gitignore
 !.gitkeep
 !models/_empty_model.txt
+!data/processed
 
 # ...even if they are in subdirectories
 !*/

@@ -130,7 +130,8 @@ features = np.array(features)
 
 
 
-def TrainModel(features, labels, testSize = 0.25, randomState = 25, nEstimators = 100):
+def TrainModel(features, labels, tempLabelName = '', testSize = 0.25, randomState = 25, nEstimators = 100):
+    print('#####################################################################')
     print('----------------Process Starts----------------')
     train_features, test_features, train_labels, test_labels = train_test_split(features, labels, test_size = testSize, random_state = randomState)
 
@@ -147,7 +148,7 @@ def TrainModel(features, labels, testSize = 0.25, randomState = 25, nEstimators 
 
 
     # Train Model
-    print('----Step: Train Model Starts----')
+    print('----Step: Train Model for ' + tempLabelName + ' Starts----')
     rf = RandomForestRegressor(n_estimators = nEstimators, random_state = randomState)
     rf.fit(train_features, train_labels)
     print('----Step: Train Model Ends----')
@@ -162,38 +163,38 @@ def TrainModel(features, labels, testSize = 0.25, randomState = 25, nEstimators 
 
     # Determine Performance Metrics
     print('----Step: Determine Performance Starts----')
-    mape = 100 * (errors / test_labels)
+    mape = 100 * (errors / (1+test_labels))
     accuracy = 100 - np.mean(mape)
     print('Accuracy:', round(accuracy, 2), '%.')
     print('----Step: Determine Performance Ends----')
 
     # step: return the model for saving purpose should be added in future developments
 
-print(labelNames)
-print(feature_list)
+# print(labelNames)
+# print(feature_list)
 
 # each line predicts a single treatment in the following list (labelNames):
-#        'treatments_BCLC- LT or PEI; HKLC- Resection/LT/Ablation',
-#        'treatments_BCLC- No treatment; HKLC- Supportive Care',
-#        'treatments_BCLC- Resection; HKLC- Resection/LT/Ablation',
-#        'treatments_BCLC- Resection; HKLC- TACE',
-#        'treatments_BCLC- TACE; HKLC- LT',
-#        'treatments_BCLC- TACE; HKLC- Resection/LT/Ablation',
-#        'treatments_BCLC- TACE; HKLC- TACE',
-#        'treatments_BCLC-TACE; HKLC-Resection/LT/Ablation'
+#        label1: 'treatments_BCLC- LT or PEI; HKLC- Resection/LT/Ablation',
+#        label2: 'treatments_BCLC- No treatment; HKLC- Supportive Care',
+#        label3: 'treatments_BCLC- Resection; HKLC- Resection/LT/Ablation',
+#        label4: 'treatments_BCLC- Resection; HKLC- TACE',
+#        label5: 'treatments_BCLC- TACE; HKLC- LT',
+#        label6: 'treatments_BCLC- TACE; HKLC- Resection/LT/Ablation',
+#        label7: 'treatments_BCLC- TACE; HKLC- TACE',
+#        label8: 'treatments_BCLC-TACE; HKLC-Resection/LT/Ablation'
 
 
-# TrainModel(features, label1)
-# TrainModel(features, label2)
-# TrainModel(features, label3)
-# TrainModel(features, label4)
-# TrainModel(features, label5)
-# TrainModel(features, label6)
-# TrainModel(features, label7)
-# TrainModel(features, label8)
+TrainModel(features, label1, 'label1')
+TrainModel(features, label2, 'label2')
+TrainModel(features, label3, 'label3')
+TrainModel(features, label4, 'label4')
+TrainModel(features, label5, 'label5')
+TrainModel(features, label6, 'label6')
+TrainModel(features, label7, 'label7')
+TrainModel(features, label8, 'label8')
 
 
-# Issues:
+# Issues (all fixed)
 # 1) in line 165, the value of test_labels is zero, which leads to error
 #       I might did something wrong and caused this issue
 # 2) There are few data but too many different treatments to predict

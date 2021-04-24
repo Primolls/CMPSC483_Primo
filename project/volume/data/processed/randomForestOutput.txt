@@ -1,0 +1,80 @@
+#####################################################################
+----------------Process Starts----------------
+----Step: Train Model for label1 Starts----
+----Step: Train Model Ends----
+----Step: Make Prediction Starts----
+Mean Absolute Error: 0.17 degrees.
+----Step: Make Prediction Ends----
+----Step: Determine Performance Starts----
+Accuracy: 82.56 %.
+----Step: Determine Performance Ends----
+#####################################################################
+----------------Process Starts----------------
+----Step: Train Model for label2 Starts----
+----Step: Train Model Ends----
+----Step: Make Prediction Starts----
+Mean Absolute Error: 0.11 degrees.
+----Step: Make Prediction Ends----
+----Step: Determine Performance Starts----
+Accuracy: 94.44 %.
+----Step: Determine Performance Ends----
+#####################################################################
+----------------Process Starts----------------
+----Step: Train Model for label3 Starts----
+----Step: Train Model Ends----
+----Step: Make Prediction Starts----
+Mean Absolute Error: 0.21 degrees.
+----Step: Make Prediction Ends----
+----Step: Determine Performance Starts----
+Accuracy: 87.22 %.
+----Step: Determine Performance Ends----
+#####################################################################
+----------------Process Starts----------------
+----Step: Train Model for label4 Starts----
+----Step: Train Model Ends----
+----Step: Make Prediction Starts----
+Mean Absolute Error: 0.0 degrees.
+----Step: Make Prediction Ends----
+----Step: Determine Performance Starts----
+Accuracy: 99.78 %.
+----Step: Determine Performance Ends----
+#####################################################################
+----------------Process Starts----------------
+----Step: Train Model for label5 Starts----
+----Step: Train Model Ends----
+----Step: Make Prediction Starts----
+Mean Absolute Error: 0.15 degrees.
+----Step: Make Prediction Ends----
+----Step: Determine Performance Starts----
+Accuracy: 89.22 %.
+----Step: Determine Performance Ends----
+#####################################################################
+----------------Process Starts----------------
+----Step: Train Model for label6 Starts----
+----Step: Train Model Ends----
+----Step: Make Prediction Starts----
+Mean Absolute Error: 0.11 degrees.
+----Step: Make Prediction Ends----
+----Step: Determine Performance Starts----
+Accuracy: 89.17 %.
+----Step: Determine Performance Ends----
+#####################################################################
+----------------Process Starts----------------
+----Step: Train Model for label7 Starts----
+----Step: Train Model Ends----
+----Step: Make Prediction Starts----
+Mean Absolute Error: 0.11 degrees.
+----Step: Make Prediction Ends----
+----Step: Determine Performance Starts----
+Accuracy: 94.22 %.
+----Step: Determine Performance Ends----
+#####################################################################
+----------------Process Starts----------------
+----Step: Train Model for label8 Starts----
+----Step: Train Model Ends----
+----Step: Make Prediction Starts----
+Mean Absolute Error: 0.02 degrees.
+----Step: Make Prediction Ends----
+----Step: Determine Performance Starts----
+Accuracy: 97.56 %.
+----Step: Determine Performance Ends----

@@ -5,7 +5,8 @@
 !.gitignore
 !.gitkeep
 !models/_empty_model.txt
-!data/processed
+!data/processed/labelManual.txt
+!data/processed/randomForestOutput.txt
 
 # ...even if they are in subdirectories
 !*/

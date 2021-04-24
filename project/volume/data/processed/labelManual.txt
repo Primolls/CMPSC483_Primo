@@ -1,0 +1,9 @@
+# each line predicts a single treatment in the following list (labelNames):
+#        label1: 'treatments_BCLC- LT or PEI; HKLC- Resection/LT/Ablation',
+#        label2: 'treatments_BCLC- No treatment; HKLC- Supportive Care',
+#        label3: 'treatments_BCLC- Resection; HKLC- Resection/LT/Ablation',
+#        label4: 'treatments_BCLC- Resection; HKLC- TACE',
+#        label5: 'treatments_BCLC- TACE; HKLC- LT',
+#        label6: 'treatments_BCLC- TACE; HKLC- Resection/LT/Ablation',
+#        label7: 'treatments_BCLC- TACE; HKLC- TACE',
+#        label8: 'treatments_BCLC-TACE; HKLC-Resection/LT/Ablation'
